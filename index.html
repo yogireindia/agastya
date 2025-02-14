@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="agni.css">
+    <title>The Agastya</title>
+
+</head>
+
+<header class="bg-white py-4 border-b border-gray-200">
+    <nav class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <img src="yogire-orange.png" alt="Logo" class="w-[150px] h-[50px] bg-white">
+            
+            <!-- Hamburger Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-gray-600 hover:text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex gap-4 list-none">
+                <li><a href="https://yogire.com/yogafest/" class="no-underline text-[#384741] font-bold hover:text-gray-600">Hatha Yoga Fest</a></li>
+                <li><a href="dwijas.html" target="_blank" class="no-underline text-[#384741] font-bold hover:text-gray-600">Dwijas</a></li>
+                <li><a href="aahar.html" target="_blank" class="no-underline text-[#384741] font-bold hover:text-gray-600">Aahar</a></li>
+                <li><a href="https://rhitwik-dg.github.io/Agni/" class="no-underline text-[#384741] font-bold hover:text-gray-600">Agni</a></li>
+                <li><a href="https://yogire.com/srishti/" class="no-underline text-[#384741] font-bold hover:text-gray-600">Srishti</a></li>
+                <li><a href="#contactus" id="contact-link" class="no-underline text-[#384741] font-bold hover:text-gray-600">Contact</a></li>
+                <li><a href="#aboutus" id="about-link" class="no-underline text-[#384741] font-bold hover:text-gray-600">About us</a></li>
+            </ul>
+
+            <!-- Contact Info - Desktop -->
+            <p class="hidden lg:block text-sm">Any Questions? Call us at +918217481232</p>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <ul class="flex flex-col mt-4 space-y-2">
+                <li><a href="https://yogire.com/yogafest/" class="block py-2 text-[#384741] font-bold hover:bg-gray-50">Hatha Yoga Fest</a></li>
+                <li><a href="dwijas.html" target="_blank" class="block py-2 text-[#384741] font-bold hover:bg-gray-50">Dwijas</a></li>
+                <li><a href="aahar.html" target="_blank" class="block py-2 text-[#384741] font-bold hover:bg-gray-50">Aahar</a></li>
+                <li><a href="https://rhitwik-dg.github.io/Agni/" class="block py-2 text-[#384741] font-bold hover:bg-gray-50">Agni</a></li>
+                <li><a href="https://yogire.com/srishti/" class="block py-2 text-[#384741] font-bold hover:bg-gray-50">Srishti</a></li>
+                <li><a href="#contactus" class="block py-2 text-[#384741] font-bold hover:bg-gray-50">Contact</a></li>
+                <li><a href="#aboutus" class="block py-2 text-[#384741] font-bold hover:bg-gray-50">About us</a></li>
+                <li class="py-2 text-sm">Any Questions? Call us at +918217481232</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<body class="bg-white p-4">
+
+    <section class="max-w-6xl mx-auto px-4 md:px-6 py-12 text-center">
+        <!-- Logo -->
+       
+    
+        <!-- Group Photo -->
+        <div class="mb-8">
+            <div class="relative">
+                <!-- Orange text overlay -->
+                
+                
+                <!-- Main image -->
+                <img 
+                    src="agastya-hero.jpg" 
+                    alt="Agastya Group Photo" 
+                    class="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                />
+            </div>
+        </div>
+    
+        <!-- Text Content -->
+        <div class="max-w-2xl mx-auto mb-8">
+            <p class="text-lg md:text-xl text-gray-800 mb-6">
+                Yoga is for everyone. Through Agastya we aim to 
+                reach the ones who are not as privileged as we are!
+            </p>
+        </div>
+    
+        <!-- Sponsor Button -->
+        <button class="bg-[#f0870f] text-black px-8 py-3 rounded-md text-lg font-bold 
+                       hover:bg-[#d67908] transition-colors duration-300 uppercase">
+            Sponsor Today!
+        </button>
+    </section>
+
+<!-- Main Section -->
+<section class="min-h-screen flex items-center justify-center px-4 md:px-6">
+    <div class="w-full max-w-4xl my-12 md:my-24">
+        <!-- Tabs Container -->
+        <div class="w-full">
+            <!-- Tab Headers -->
+            <ul class="flex flex-col sm:flex-row border-b" role="tablist">
+                <li class="mr-2 w-full sm:w-auto" role="presentation">
+                    <button class="w-full sm:w-auto px-4 md:px-5 py-2 md:py-2.5 text-lg md:text-2xl border rounded-t-lg bg-white text-black hover:bg-gray-50 focus:outline-none active" 
+                            id="member-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#member" 
+                            type="button" 
+                            role="tab">
+                            What We Do
+                    </button>
+                </li>
+                <li class="w-full sm:w-auto" role="presentation">
+                    <button class="w-full sm:w-auto px-4 md:px-5 py-2 md:py-2.5 text-lg md:text-2xl border rounded-t-lg bg-white text-black hover:bg-gray-50 focus:outline-none" 
+                            id="live-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#live" 
+                            type="button" 
+                            role="tab">
+                            Get Involved!
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="border border-t-0 p-4 md:p-5">
+                <!-- Member Tab Content -->
+                <div class="tab-pane active" id="member" role="tabpanel">
+                    <div class="text-xl md:text-2xl font-normal">
+                        
+                            <h4 class="text-center sm:text-left">1. We engage with institutions in following manner</h4>
+                            <p class="text-lg md:text-xl leading-6 my-4 text-center sm:text-left">Conduct 4 yoga sessions/year for the underprivileged children<br>per year! You would also be ableto get timely updates from our<br>end re how your contributionis making a difference.</p>
+                            <h4 class="text-center sm:text-left">2. Be a Volunteer!</h4>
+                            <p class="text-lg md:text-xl leading-6 my-4 text-center sm:text-left">Following up with institutes to ensure yoga becomes<br>a part of their daily schedule.</p>
+                            <h4 class="text-center sm:text-left">3. Be an Organizer!</h4>
+                            <p class="text-lg md:text-xl leading-6 my-4 text-center sm:text-left">The sponsors would be able to receive updates about<br>how their contribution is making a difference</p>
+                                                  
+                            <h4 class="text-center sm:text-left">1.  Round Table School - 200 kids</h4>
+                            
+                            <h4 class="text-center sm:text-left">2.Anatha Shishu Ashram - 70 kids</h4>
+                            
+                            <h4 class="text-center sm:text-left">3. Special Kids School in Ballari - 70 kids</h4>
+                            
+                            
+                            <div class="flex justify-center sm:justify-start">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSewEhXYaF-3f4Zi8CjOwHEs7hIi_FGo5DQxum5bXQgteRJbnQ/viewform" class="no-underline mt-4 mb-4" target="_blank"><button class=" rounded-full mt-2 px-4 md:px-5 py-2 text-lg md:text-xl bg-[#f0870f] text-[#1d1d1d] font-bold">
+                                    I'd Love to get Involved
+                                </button></a>
+                            </div>
+                        
+                        </div>
+
+                        <div class="text-sm md:text-base text-center sm:text-left">
+                            If you are unable to join using links above,<br class="hidden sm:block">
+                            please send us a message on <span class="font-bold">+91-8217481232</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Session Tab Content -->
+                <div class="tab-pane hidden" id="live" role="tabpanel">
+                    <div class="text-xl md:text-2xl">
+                        <h4 class="text-center sm:text-left">1. Be a Sponsor!</h4>
+                        <p class="text-lg md:text-xl leading-6 my-4 text-center sm:text-left">You can make a significant changein a child's life with just ₹600<br>per year! You would also be ableto get timely updates from our<br>end re how your contributionis making a difference.</p>
+                        <h4 class="text-center sm:text-left">2. Be a Volunteer!</h4>
+                        <p class="text-lg md:text-xl leading-6 my-4 text-center sm:text-left">involved with activities likefollowing up with the schools etc.<br>to ensure that yoga is happeningas part of their daily schedule,<br>visiting kids once in a whilefor updates etc.</p>
+                        <h4 class="text-center sm:text-left">3. Be an Organizer!</h4>
+                        <p class="text-lg md:text-xl leading-6 my-4 text-center sm:text-left">Bring Agastya to your institute!Or if you know an institute<br>that would love to bring Agastyato their abode.</p>
+                                              
+                
+                        
+                        <div class="flex justify-center sm:justify-start">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSewEhXYaF-3f4Zi8CjOwHEs7hIi_FGo5DQxum5bXQgteRJbnQ/viewform" class="no-underline" target="_blank"><button class=" rounded-full mt-2 px-4 md:px-5 py-2 text-lg md:text-xl bg-[#f0870f text-[#1d1d1d] font-bold">
+                                I'd Love to get Involved
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <footer class="py-16 px-4">
+        <!-- WhatsApp Group Section -->
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-serif mb-4">Yogi Re WhatsApp Group</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-6">
+                We have a WhatsApp broadcast group where you can get daily yogic updates.You can also get information on upcoming Isha & Yogi Re programs. If you'd like to be added to the group, please tap the link below
+            </p>
+            <a href="https://www.whatsapp.com/channel/0029Va9Xwcr9hXF3ib37ls0r" target="_blank" class="inline-block bg-[#f0870f] text-black px-8 py-2 rounded-full font-medium hover:bg-[#f0870f] transition-colors">
+                LET ME IN!
+            </a>
+        </div>
+    
+        <!-- Contact and Social Links -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Contact Info -->
+            <div class="text-gray-600 text-center md:text-left mb-8">
+                <p class="mb-2">ask@yogire.com</p>
+                <p class="mb-4">Call/WhatsApp at +918217481232</p>
+                <p class="text-sm">
+                    Agastya is an initiative of 
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Yogi Re</a>
+                </p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://www.youtube.com/yogire" target="_blank" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/yogire.me" target="_blank" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.77,7.46H14.5v-1.9c0-0.9,0.6-1.1,1-1.1h3V0.5h-4.33C10.24,0.5,9.5,3.3,9.5,5.47v2h-3v4h3v12h5v-12h3.85l0.42-4H14.5z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/yogire.me/" target="_blank" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/checkpoint/challenge/AgFVJodeRdYQSQAAAZT6mbu0HBEfocYPRoFypOq3iCQS9lA3_fXM-Ed0OZvAbe8ZswaE8uVPb4tXqtwRCohKbYYZrwjdRw?ut=3KU_DWoAtfmbE1" target="_blank" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fyogire_me" target="_blank" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="text-center text-sm text-gray-500">
+                © Copyright 2025 Yogi Re. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="agastya.js"></script>
+</body>
+</html>
